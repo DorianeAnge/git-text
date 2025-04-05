@@ -1,3 +1,20 @@
+<?php 
+$username = "raoulkof";
+$servername="localhost";
+$password="bonjour!";
+$dbname="site_1";
+ 
+$conn = new msqli($servername , $username , $passeword , $dbname );
+
+ if($conn ->connect_error){
+  die("erreur dee connexion à la base de donnée : ".$conn->connect_error);
+ } else {
+  echo " connexion ok ! ";
+ }
+
+
+
+?>
 <!DOCTYPE html> 
  <html>
 
